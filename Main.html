@@ -3,17 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Atividade GIGANTE</title>
+    <style>
+        <style>
+    /* 1. Adicionado o asterisco aqui */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 16px;
+        background-color: #0b0e14;
+        color: #ffffff;
+        overflow-x: hidden; /* Evita scroll horizontal indesejado */
+    }
+
+    header {
+        width: 100vw;
+        height: 70vh;
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(138, 43, 226, 0.4)),
+        url('https://www.meme-arsenal.com/memes/24ae6fbd55927027e762102360f09126.jpg') no-repeat center center;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-bottom: 8px solid #8a2be2;
+    }
+
+    header h1 {
+        font-size: 5em;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        text-shadow: 3px 3px 10px #000;
+    }
+
+    /* 2. Ajustado para bater com o HTML (hífen) */
+    .main-content {
+        width: 90%;
+        max-width: 1200px;
+        margin: -50px auto 2em auto; 
+        background-color: #1a1f29;
+        padding: 3em;
+        border-radius: 15px;
+        box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+        position: relative;
+        /* Adicionado Flexbox para alinhar os cards sem quebrar o layout */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .game-card {
+        width: 45%; /* Ajustado para caber lado a lado */
+        margin-bottom: 20px;
+        background: #252a35;
+        border: 1px solid #3d4451;
+        padding: 1.5em;
+        border-radius: 8px;
+        min-height: 400px; /* Use min-height em vez de height fixa */
+    }
+
+    .game-card img {
+        width: 100%;
+        border-radius: 5px;
+        margin-bottom: 15px;
+    }
+
+    footer {
+        text-align: center;
+        padding: 2em;
+        clear: both;
+    }
+</style>
+
 </head>
 <body>
-    <h1>Who is this people?</h1>
-    <img src="IMG_3081.jpeg" width="300" height="325">
-    <style>
-.hero-image {
-  width: 100vw;  /* Largura total da viewport */
-  height: 80vh;  /* 80% da altura da viewport */
-  object-fit: cover; /* Faz a imagem cobrir a área sem distorcer */
-}
-</style>
+    <header>
+        <h1>STAR GAME</h1>
+        <p>Domine o código. Construa o seu universo</p>
+    </header>
+
+    <main class="main-content">
+        <h2>Missões Disponíveis</h2>
+
+        <div class="game-card">
+            <img src="IMG_3081.jpeg" alt="Quest 1">
+            <h3>Boss: Arquitetura do Sistema Operacional</h3>
+            <p>Encare o desafio de entender como os sistema gerenciam o hardware para rodar seus jogos favoritos.</p>
+            <a href="#" class="btn-play">INICIAR QUEST</a>
+        </div>
+
+        <div class="game-card">
+            <img src="https://www.meme-arsenal.com/memes/24ae6fbd55927027e762102360f09126.jpg" alt="Quest 2">
+            <h3>XP: Design Responsivo</h3>
+            <p>Aprenda a usar % e VH para que seu jogo seja acessível em qualquer tela, do Mobile ao PC Gamer.</p>
+            <a href="#" class="btn-play">Coletar XP</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>GAME OVER? No. <strong>Keep Coding</strong></p>
+    </footer>
 </body>
 </html>
