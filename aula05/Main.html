@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício HTML5 moderno</title>
+    <style>
+        /* Substituimos as tag <font>, <basefont>, e atribuimos 'color', 'size', 'face' */
+        body {
+            font-family: Arial, sans-serif;
+            color: #333333; 
+            line-height: 1.6;
+            margin: 40px auto; /*Auterando para o 'auto' para centralizar a página em telas grandes*/
+            max-width: 800px; /*Limite a argura da página*/
+        }
+
+        /*CENTRALIZANDO O CABEÇALHO */
+        header {
+            text-align: center; 
+            margin-bottom: 30px;
+        }
+
+        /*CENTRALIZANDO O RODAPÉ */
+        footer {
+            text-align: center; 
+            margin-top: 50px;
+            font-weight: bold;
+        }
+
+        /*Estilizando a lista sem usar o atributo type="square" no html*/
+        .lista-quadrada {
+            list-style-type: square;
+        }
+
+        /*Substitui a tag <hr noshade>. Agora controlamos a linha 100% pelo css */
+        .linha-divisora {
+            border: 0;
+            border-top: 2px solid #007bff;/*Linha azul sólida, sem sombra*/
+            margin: 30px 0;
+        }
+
+        figcaption {
+            font-size: 0.9em;
+            color: #666;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu artigo moderno</h1>
+        <nav>
+            <a href="#conclusão">Pular direto para a conclusão</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>O que aprendemos hoje?</h2>
+            <p>O HTML5 é focado na <strong>semântica</strong>. Deixamos a apresentação visual para o CSS.</p>
+
+            <ul class="lista-quadrada">
+                <li>Estrutura limpa</li>
+                <li>CSS para o visual</li>
+                <li>Acessibilidade melhorada</li>
+            </ul>
+        </section>
+
+        <hr class="linha-divisora">
+        
+        <section>
+            <h2>Um exemplo de Imagem</h2>
+            <figure>
+                <img src="https://placehold.co/400x200" alt="Retângulo cinza com o texto 400x200">
+                <figcaption>Figura 1: Exemplo de uma imagem com legenda estrutura corretamente no HTML5.</figcaption>
+            </figure>
+        </section>
+
+        <section id="conclusão">
+            <h2>Conclusão</h2>
+            <p>A web ficou muito mais organizada e melhor né?</p>
+
+            <p>Quer saber mais? <a href="https://www.google.com.br" target="_blank">Busque no google</a></p>
+
+        </section>
+    </main>
+<footer>
+    Nome: Rickelmy Feitosa Malafaia - Camargo Aranha - 2026
+</footer>
+</body>
+</html>
